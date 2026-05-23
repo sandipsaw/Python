@@ -165,7 +165,7 @@ for i in s:
 # --->1,2,3,4,6,7,8,9,10"""
     
 # Accept an integer and print Hello world n times
-n = int(input("enter a number:-"))
+# n = int(input("enter a number:-"))
 
 """for i in  range(n):
     print('Hello world')"""
@@ -212,3 +212,119 @@ print("sum of odd number:",sum_odd)"""
         print(i)"""
 
 # Accept a number and check if it a perfect number or not.
+# A number whose sum of factors is equal to the number itself
+# Ex - 6 = 1, 2, 3 = (1+2+3) = 6
+
+"""sum = 0 
+for i in range(1,(n//2)+1):
+    if n % i == 0:
+        sum += i
+
+if n == sum:
+    print(f"{n} is a perfect number")
+else:
+    print(f"{n} is not a perfect number")"""
+
+# Check wether the number is prime or not
+"""count = 0
+for i in range(1,n+1):
+    if n%i == 0:
+        count += 1
+
+if count == 2:
+    print(f"{n} is a prime number")
+else:
+    print(f"{n} is not a prime number")"""
+
+# Reverse a string without using in build functions.
+"""s = "SANDIP"
+a = ""
+for i in range(len(s)-1,-1,-1):
+    a = a + s[i]
+
+print(a)"""
+
+# Check string is Pallindrome or not
+s = "NAMAN"
+a = ""
+for i in range(len(s)-1,-1,-1):
+    a = a + s[i]
+
+if s == a:
+    print(f"{s} is a pallindrome string")
+else:
+    print(f"{s} is not a pallindrome string")
+
+# Count all letters, digits, and special symbols from a given string
+# Given: str1 = "P@#yn26at^&i5ve"
+
+"""Expected Outcome:
+Total counts of chars, digits, and symbols
+Chars = 8 , Digits = 3 , Symbol = 4"""
+
+"""str1 = "P@#yn26at^&i5ve"
+
+chars = 0
+digits = 0
+symbol = 0
+
+for i in str1:
+    if i.isdigit():
+        digits += 1
+    elif i.isalpha():
+        chars += 1
+    else:
+        symbol += 1
+
+print(f"char={chars} digits={digits} symbol={symbol}")"""
+
+# write a program to print a number from 1 to 30
+"""a = 1
+while a <= 30:
+    print(a)
+    a += 1"""
+
+# write a program to seprate each digit of a number and print it on the new line
+
+"""a = 487
+while a > 0:
+    rem = a % 10
+    print(rem)
+    a = a // 10"""
+
+# Accept a number and print its reverse
+"""a = 487
+rev = 0
+while a > 0:
+    rem = a % 10
+    rev = rev * 10 + rem
+    a = a // 10
+
+print(rev)"""
+
+# Accept a number and check if it is a pallindromic number (If number and its reverse are equal?
+
+"""a = int(input("Enter a number:-"))
+rev = 0
+copy = a
+while a > 0:
+    rem = a % 10
+    rev = rev * 10 + rem
+    a = a // 10
+if copy == rev:
+    print(f"{copy} is a palindromic number")
+else:
+    print(f"{copy} is not a palindromic number")"""
+
+# Create a random number guessing game with python.
+
+"""import random
+
+num = random.randint(1,10)
+guess = int(input("Guess a number:-"))
+print(num)
+if guess == num:
+    print("you are guessing the right number")
+else:
+    print("you are guessing the wrong number")"""
+
