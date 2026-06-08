@@ -104,3 +104,49 @@ print("factorial:",Fact(number))
 # write a function to display the factor of a given numbe
 
 n = 148
+
+lis = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+transpose = []
+for i in range(len(lis[0])):
+    row = []
+    for j in range(len(lis)):
+        row.append(lis[j][i])
+    transpose.append(row)
+
+for row in transpose:
+    print(row)
+
+r = int(input("enter number of row"))
+c = int(input("enter number of column"))
+
+A = []
+B = []
+print("Enter elements of First Matrix:")
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(int(input()))
+    A.append(row)
+
+print("Enter elements of Second Matrix:")
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(int(input()))
+    B.append(row)
+
+result = []
+
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(A[i][j] + B[i][j])
+    result.append(row)
+
+print("Sum of Matrices:")
+for row in result:
+    print(row)
